@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+.nav1 ul{
+    width: 100%;
+    list-style: none;
+    background-color: black;
+}
+.nav1 li{
+    width: auto;
+    float: left;
+    position: relative;
+}
+.nav1 a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    transition: all ease 0.2s;
+    padding: 15px 50px;
+}
+.nav1 a:hover{
+    background-color: white;
+    color: black;
+}
+ul #menu{
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+li:hover ul#menu{
+    visibility:visible;
+    opacity: 1;
+}
+#menu li{
+    float: none;
+}
+#menu a{
+    background-color: black;
+}
+#menu a:hover{
+    background-color: white;
+    color: black;
+}
+.nav2{
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.2s;
+    overflow: auto;
+    background-color: #111;
+    padding-top: 60px;
+}
+.nav2 a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    transition: 0.2s;
+    font-size: 25px;
+}
+.nav2 a:hover{
+    color: #787878;
+}
+.nav2 .closebtn{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    margin-right: 50px;
+    font-size: 36px;
+}

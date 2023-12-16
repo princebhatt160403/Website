@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a>
+                    <ul id="menu">
+                        <li><a href="#">IMG1</a></li>
+                        <li><a href="#">IMG2</a></li>
+                        <li><a href="#">IMG3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <!-- <input type="search" name="search" id="mysearch" placeholder="Enter to search"> -->
+            </ul>
+        </div>
+        <div class="nav2" id="mysidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About Us</a>
+            <a href="#">Website</a>
+            <a href="login.html" onclick="">Login</a>
+        </div>
+        <span style="font-size: 36px;cursor: pointer; color: white;" onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="container1">
+        <div class="myslide">
+            <img src="img/pp1.avif" alt="">
+        </div>
+        <div class="myslide">
+            <img src="img/pp2.avif" alt="">
+        </div>
+        <div class="myslide">
+            <img src="img/pp3.avif" alt="">
+        </div>
+        <div class="myslide">
+            <img src="img/pp4.avif" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
